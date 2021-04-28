@@ -1,0 +1,25 @@
+<h1>hello world</h1>
+
+<p> This is My First Page Use Flask 2021-04-27 --Test</p>
+
+<p>my name is {{ first_name }}</p>
+<p>{{ stuff|title }}</p>
+
+
+<h3>Favorite Cars:</h3>
+{% for topping in favorite_cars %}
+
+	{% if topping == 'sti'  %}
+		I love this car Subaru   {{ topping  }}<br/>
+	{% else %}
+		{{ topping }}<br/>
+
+	{% endif %}
+
+	
+{% endfor %}
+
+
+<br/><br/>
+
+{{ favorite_cars|length -3}}
